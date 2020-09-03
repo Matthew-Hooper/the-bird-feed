@@ -1,0 +1,106 @@
+.navbar {
+    background-color: #575757;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+}
+
+.mobile-bar {
+    display: none;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding:0.5em 1em;
+    margin-right: 2rem;
+    border: 1px rgb(23, 151, 184) solid;
+    background-color: #2b2b2b;
+}
+
+.mobile-bar span {
+    display: block;
+	height:2px;
+	width:20px;
+	margin:2px;
+	background:rgb(23, 151, 184);	
+}
+
+.logo {
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.2%;
+    padding-top: 0.2%;
+    height: 3rem;
+    width: 12rem;
+    border: 1px solid #2b2b2b;
+    /* background-color: #a8a8a8; */
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.logo:hover {
+    background-color: #2b2b2b;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul li:nth-of-type(2) {
+    margin-right: 20%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(23, 151, 184);
+    text-align: center;
+    padding: 12px 16px;
+    margin-left: 40px;
+    background-color: #2b2b2b;
+    border: 1px solid rgb(23, 151, 184);
+    height: 3rem;
+    transition: all 1s ease-out;
+}
+
+a:hover {
+    background-color: #3f3f3f;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        opacity: 0;
+		max-height: 0px;
+		overflow: hidden;
+		visibility: none;
+		display:flex;
+		position: absolute;
+		left:0;right:0;top:100%;
+		flex-direction: column;
+		background-color: #f1f1f1;
+		margin-left:-100%;
+    }
+    .nav-links.active {
+        opacity: 1;
+		max-height: 500px;
+		right:0;
+		margin-left:0%;
+		background-color: #e1e1e1;
+    }
+    li.active {
+        display: block;
+    }
+    a.active {
+        display: block;
+    }
+    .mobile-bar {
+        display: flex;
+    }
+}
+
+ /* logomakr.com/39gPZh */
