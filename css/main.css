@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
 body {
     background-color: rgb(48, 48, 48);
     font-family: "Montserrat", sans-serif;
 }
 
-.container::before {    
+/* Photo by Magda Ehlers from Pexels */
+.container:before {    
     content: "";
     background-image: url('../assets/bird-bg.jpg');
     background-size: contain;
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -44,5 +50,3 @@ p {
 p:nth-of-type(1) {
     margin-top: 3%;
 }
-
-/* Photo by Magda Ehlers from Pexels */
