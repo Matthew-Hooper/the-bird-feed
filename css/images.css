@@ -82,7 +82,6 @@ button {
 
 .row {
     display: flex;
-    border: 1px solid red;
     gap: 10%;
     width: 80%;
     position: relative;
