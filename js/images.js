@@ -19,5 +19,3 @@ function loadImages() {
 
     .catch(error => `Error= ${error}` )
 }
-
-
